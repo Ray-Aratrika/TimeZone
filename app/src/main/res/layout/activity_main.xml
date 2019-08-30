@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#1A237E"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TIME"
+        android:textSize="40sp"
+        android:textColor="#fff"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D50000">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TimeZone1"
+                android:textSize="30sp"
+                android:gravity="center"/>
+            <TextClock
+                android:id="@+id/tc1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:format24Hour="hh:mm:ss a"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@id/tv1"
+                android:layout_marginTop="16sp"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TimeZone1"
+                android:textSize="30sp"
+                android:gravity="center"/>
+            <TextClock
+                android:id="@+id/tc2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:format24Hour="hh:mm:ss a"
+                android:timeZone="GMT-4"
+                android:textColor="#fff"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:layout_below="@id/tv2"
+                android:layout_marginTop="16sp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
